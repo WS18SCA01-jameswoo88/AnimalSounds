@@ -19,45 +19,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1am-zn-T3o">
-                                <rect key="frame" x="26.5" y="152" width="267" height="176"/>
+                                <rect key="frame" x="82.5" y="151" width="155.5" height="178"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animal Sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-MT-4p0">
-                                        <rect key="frame" x="56" y="0.0" width="155.5" height="29"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Hr9-Q8-tIi">
-                                        <rect key="frame" x="0.0" y="39" width="267" height="98"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcm-H2-e8h">
-                                                <rect key="frame" x="0.0" y="0.0" width="77" height="98"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                                <state key="normal" title="😸"/>
-                                                <connections>
-                                                    <action selector="catButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Onv-ql-G3X"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3Q-xU-bIq">
-                                                <rect key="frame" x="95" y="0.0" width="77" height="98"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                                <state key="normal" title="🐶"/>
-                                                <connections>
-                                                    <action selector="dogButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9q-iG-JOy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ce-yl-QQw">
-                                                <rect key="frame" x="190" y="0.0" width="77" height="98"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                                <state key="normal" title="🐮"/>
-                                                <connections>
-                                                    <action selector="cowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aI-nz-qAi"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0A-XB-e1E">
+                                        <rect key="frame" x="17" y="39" width="121" height="101"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="JKk-qk-AdG"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="cf4-Cl-gtS"/>
+                                        </connections>
+                                    </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap an animal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVG-gB-bxV">
-                                        <rect key="frame" x="63" y="147" width="141" height="29"/>
+                                        <rect key="frame" x="7" y="149" width="141" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -74,6 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="animalSoundLabel" destination="sWq-MT-4p0" id="oWh-ls-2nO"/>
+                        <outlet property="segmentedControl" destination="O0A-XB-e1E" id="T60-dx-kBI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

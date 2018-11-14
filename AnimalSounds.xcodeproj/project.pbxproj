@@ -18,6 +18,7 @@
 		3B405E862193C53F00E9CC0A /* moo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3B405E832193C53E00E9CC0A /* moo.m4a */; };
 		3B405E872193C53F00E9CC0A /* woof.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3B405E842193C53E00E9CC0A /* woof.m4a */; };
 		3B405E882193C53F00E9CC0A /* meow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3B405E852193C53E00E9CC0A /* meow.m4a */; };
+		3BFE3E90219C88E500F8625E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE3E8F219C88E500F8625E /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3B405E832193C53E00E9CC0A /* moo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = moo.m4a; sourceTree = "<group>"; };
 		3B405E842193C53E00E9CC0A /* woof.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = woof.m4a; sourceTree = "<group>"; };
 		3B405E852193C53E00E9CC0A /* meow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = meow.m4a; sourceTree = "<group>"; };
+		3BFE3E8F219C88E500F8625E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				3B405E532193B83000E9CC0A /* AppDelegate.swift */,
 				3B405E552193B83000E9CC0A /* ViewController.swift */,
+				3BFE3E8F219C88E500F8625E /* Animal.swift */,
 				3B405E812193C41500E9CC0A /* SimpleSound.swift */,
 				3B405E572193B83000E9CC0A /* Main.storyboard */,
 				3B405E852193C53E00E9CC0A /* meow.m4a */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B405E822193C41500E9CC0A /* SimpleSound.swift in Sources */,
+				3BFE3E90219C88E500F8625E /* Animal.swift in Sources */,
 				3B405E562193B83000E9CC0A /* ViewController.swift in Sources */,
 				3B405E542193B83000E9CC0A /* AppDelegate.swift in Sources */,
 			);
